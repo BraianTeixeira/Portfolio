@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Meu portfólio</title>
+</head>
+
+<body>
+  <header class="text-center">
+    <img src="img/Perfil.jpeg" alt="avatar do Brino" class="rounded-circle" width="150" height="150" srcset="">
+    <p class="lead">Eu sou Brino_</p>
+    <h1>Eu aprendo Programação</h1>
+    <p>Sou um estudante que usa a programação para efetuar projetos escolares desenvolvidos pelo Alura. Esse portfólio
+      tem o objetivo de mostrar alguns projetos já realizados durante minha jornada do 2° ano do ensino médio.</p>
+    <p>Minhas habilidades</p>
+    <div>
+      <p class="badge bg-secondary">HTML</p>
+      <p class="badge bg-secondary">CSS</p>
+      <p class="badge bg-secondary">p5js</p>
+    </div>
+  </header>
+  <main class="container text-center mt-5">
+    <h2>Meus projetos</h2>
+    <div class="row">
+      <!-- Projeto 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/projetoofc1.png" class="card-img-top" width="200" height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Meu Dinossauro Fugiu de Casa</h5>
+            <p class="card-text">Este projeto é uma história interativa onde o jogador acompanha Timmy, um garoto de 12
+              anos que perdeu seu dinossauro de estimação, Rex, e precisa encontrá-lo. O jogo se desenrola por meio de
+              escolhas que determinam o rumo da narrativa.</p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja meu
+              Projeto</button>
+          </div>
+        </div>
+      </div>
+      <!-- Projeto 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/projetoofc2.png" class="card-img-top" width="300" height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">SpotiPobre</h5>
+            <p class="card-text">O SpotiPobre parece ser um projeto que oferece uma experiência musical alternativa
+              baseada em vídeos do YouTube. Ele apresenta uma interface estilizada e organizada pelo gênero músical
+              Rock, permitindo aos usuários acessar rapidamente conteúdos relacionados.</p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja meu
+              Projeto</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/projetoofc3.png" class="card-img-top" width="300" height="300" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Corrida dos Répteis</h5>
+            <p class="card-text">Este é um jogo de corrida entre cinco animais. Cada jogador
+              controla um animal pressionando uma tecla específica do teclado (A, S, J, K, L). Quando uma tecla
+              é pressionada, o animal correspondente se move. O objetivo do jogo é
+              fazer com que seu animal chegue primeiro à linha de chegada.</p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja meu
+              Projeto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Modal 1 -->
+  <div class="modal" id="modal1" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Meu Dinossauro Fugiu de Casa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/projetoofc1.png" class="img-fluid w-100" alt="">
+          <p>O jogo opera exibindo uma série de "passos" ou cenários na tela, cada um com uma imagem que representa o ambiente, um texto narrando a situação atual e, crucialmente, opções de botões para o jogador tomar decisões. No início, você é apresentado a Timmy, que pede ajuda para encontrar seu dinossauro. Suas respostas a essa e às perguntas subsequentes, dadas ao clicar nos botões, guiam a narrativa para diferentes caminhos.</p>
+          <p>Por trás dos panos, o sistema funciona de forma inteligente. Ao clicar em um botão, o jogo identifica qual será o "próximo passo" da história através de um atributo data-proximo no HTML. Em seguida, ele esconde o cenário atual e exibe o próximo, criando uma transição fluida entre as etapas da aventura.</p>
+          <p>Interessantemente, o jogo também possui um mecanismo para mudar o estilo visual da página em momentos específicos da história. Por exemplo, se suas escolhas levarem a um "final ruim" ou a certos desdobramentos negativos, o fundo da página pode mudar para preto e a cor do texto para vermelho, reforçando o tom dramático. No final, independentemente do desfecho (seja um "final bom" ou um "final ruim"), o jogo oferece um botão para reiniciar, permitindo que o jogador experimente diferentes escolhas e explore todos os possíveis caminhos da história. É uma maneira simples, mas eficaz, de criar uma experiência narrativa ramificada.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://braianteixeira.github.io/Dinossauro-Fugiu-de-Casa/">Teste meu projeto</a>
+          <a href="https://github.com/BraianTeixeira/Dinossauro-Fugiu-de-Casa">Ver código do projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal" id="modal2" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">SpotiPobre</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/projetoofc2.png" class="img-fluid w-100" alt="">
+          <p>A página é estruturada de forma intuitiva, começando com um cabeçalho que exibe o nome "SPOTIPOBRE" acompanhado de uma imagem, evocando a ideia de um serviço de streaming de música. Logo abaixo, uma seção de destaque com o título "ROCK VERSION" e uma imagem ilustrativa convida o usuário para o universo do rock.</p>
+          <p>O coração do site reside nas suas categorias de vídeos, que organizam o conteúdo por subgêneros como "Nu-Metal", "Hard-Rock", "Thrash-Metal" e "Punk-Rock". Cada uma dessas categorias apresenta uma série de miniaturas de vídeos. Ao interagir com essas miniaturas, o usuário notará um efeito visual: quando o mouse passa sobre elas, a imagem ganha mais nitidez e uma borda verde vibrante, indicando que são clicáveis. Ao clicar em qualquer uma das miniaturas, o usuário é direcionado para um link do YouTube, embora no código fornecido esses links sejam apenas exemplos genéricos. Em sua essência, o "SpotiPobre" é uma página descomplicada que permite aos entusiastas do rock navegar e acessar facilmente vídeos de seus subgêneros favoritos.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://braianteixeira.github.io/SpotiPobre/">Teste meu projeto</a>
+          <a href="https://github.com/BraianTeixeira/SpotiPobre">Ver código do projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal" id="modal3" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Corrida dos Répteis</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/projetoofc3.png" class="img-fluid w-100" alt="">
+          <p>Ao iniciar o jogo, a tela mostra um fundo claro e uma linha de chegada branca com detalhes pretos no lado direito. Cinco "jogadores" — um crocodilo 🐊, uma cobra 🐍, um tiranossauro 🦖, uma tartaruga 🐢 e um lagarto 🦎 — são dispostos na linha de partida, cada um em sua própria "pista". Existem também alguns cactos 🌵 desenhados no cenário para dar um toque visual.</p>
+          <p>O diferencial do jogo está na sua interação. Cada um dos cinco animais é associado a uma tecla específica do teclado ("a", "s", "j", "k", "l"). Para fazer um animal avançar, o jogador precisa pressionar repetidamente a tecla correspondente a ele. A cada toque na tecla, o animal se move um pouco para a direita, com um avanço aleatório para adicionar um elemento de imprevisibilidade.</p>
+          <p>O jogo continua até que um dos animais ultrapasse a linha de chegada. Quando isso acontece, o nome do animal vencedor é exibido na tela, e o jogo para, indicando o fim da corrida. Caso a janela do navegador perca o foco (ou seja, se o usuário clicar fora da área do jogo), o fundo da tela muda para uma cor mais neutra, sinalizando que a interação está pausada, e retorna ao normal quando o foco é restabelecido. É uma corrida divertida e direta, onde a agilidade nos dedos é a chave para a vitória.</p>
+        </div>
+        <div class="modal-footer">
+          <a href="https://braianteixeira.github.io/Corrida-dos-Repteis-/">Teste meu projeto</a>
+          <a href="https://github.com/BraianTeixeira/Corrida-dos-Repteis-">Ver código do projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container text-center py-5">
+    <h2>Entre em contato</h2>
+    <div>
+      <i class="bi bi-github"></i>
+      <a href="https://github.com/BraianTeixeira">Github</a>
+    </div>
+    <p class="my-5 text-center">© Copyright 2025. Produzido por Braian Teixeira</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
